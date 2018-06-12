@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1EAEA1C78BDEE352F186DD59 /* Pods_LaAppPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58372009A50E6D3A3940DCA /* Pods_LaAppPC.framework */; };
+		441FFC9720CFECF600F74CED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 441FFC9620CFECF600F74CED /* GoogleService-Info.plist */; };
 		442FFCD420CFE03600788110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FFCD320CFE03600788110 /* AppDelegate.swift */; };
 		442FFCD620CFE03600788110 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FFCD520CFE03600788110 /* ViewController.swift */; };
 		442FFCD920CFE03600788110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442FFCD720CFE03600788110 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		10A7156EC62A6FCF05373470 /* Pods-LaAppPCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaAppPCUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaAppPCUITests/Pods-LaAppPCUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3FCDD18A19ACEB784712BE60 /* Pods-LaAppPC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaAppPC.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaAppPC/Pods-LaAppPC.release.xcconfig"; sourceTree = "<group>"; };
+		441FFC9620CFECF600F74CED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		442FFCD020CFE03600788110 /* LaAppPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaAppPC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		442FFCD320CFE03600788110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		442FFCD520CFE03600788110 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				442FFCD720CFE03600788110 /* Main.storyboard */,
 				442FFCDA20CFE03700788110 /* Assets.xcassets */,
 				442FFCDC20CFE03700788110 /* LaunchScreen.storyboard */,
+				441FFC9620CFECF600F74CED /* GoogleService-Info.plist */,
 				442FFCDF20CFE03700788110 /* Info.plist */,
 			);
 			path = LaAppPC;
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				442FFCDE20CFE03700788110 /* LaunchScreen.storyboard in Resources */,
+				441FFC9720CFECF600F74CED /* GoogleService-Info.plist in Resources */,
 				442FFCDB20CFE03700788110 /* Assets.xcassets in Resources */,
 				442FFCD920CFE03600788110 /* Main.storyboard in Resources */,
 			);
@@ -391,9 +395,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LaAppPC/Pods-LaAppPC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
