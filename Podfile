@@ -7,6 +7,9 @@ target 'LaAppPC' do
 
   # Pods for LaAppPC
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'	
 
   target 'LaAppPCTests' do
     inherit! :search_paths
